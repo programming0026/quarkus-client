@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  quarkus-client:
+    image: quarkus-client:1.0.0
+    container_name: quarkus-client
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      API_URL: https://jsonplaceholder.typicode.com
+      CONNECT_TIMEOUT: 3000
+      READ_TIMEOUT: 5000
+    networks:
+      - quarkus-network
+    ports:
+      - "8080:8080"
+
+networks:
+  quarkus-network:
+    driver: bridge
