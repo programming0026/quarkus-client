@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.juniverse.client;
 
 import com.juniverse.client.dto.User;
@@ -23,22 +19,22 @@ import java.util.concurrent.CompletionStage;
 public interface UserRestClient {
 
     /**
-     * Get all users synchronous
+     * Obtiene todos los usuarios de forma síncrona
      * @return List
      */
     @GET
     List<User> getAllUsers();
 
     /**
-     * Get all users asynchronous
+     * Obtiene todos los usuarios de forma asíncrona
      * @return CompletionStage<List<User>>
      */
     @GET
     CompletionStage<List<User>> getAllUsersAsync();
 
     /**
-     * Get a user by ID
-     * @param id The id
+     * Obtiene un usuario por identificador
+     * @param id identificador
      * @return User
      */
     @GET
@@ -46,8 +42,8 @@ public interface UserRestClient {
     User getUserById(@PathParam("id") Long id);
 
     /**
-     * Obtain a user by Asynchronous ID
-     * @param id The id
+     * Obtiene un usuario por identificador de forma asíncrona
+     * @param id identificador
      * @return CompletionStage<User>
      */
     @GET
@@ -55,17 +51,17 @@ public interface UserRestClient {
     CompletionStage<User> getUserByIdAsync(@PathParam("id") Long id);
 
     /**
-     * Create a new user
-     * @param user The user
+     * Crea un usuario nuevo
+     * @param user usuario
      * @return User
      */
     @POST
     User createUser(User user);
 
     /**
-     * Update an existing user
-     * @param id The id
-     * @param user The user
+     * Actualiza un usuario existente
+     * @param id identificador
+     * @param user usuario
      * @return User
      */
     @PUT
@@ -73,8 +69,8 @@ public interface UserRestClient {
     User updateUser(@PathParam("id") Long id, User user);
 
     /**
-     * Eliminate a user
-     * @param id The id
+     * Elimina un usuario
+     * @param id identificador
      */
     @DELETE
     @Path("/{id}")
