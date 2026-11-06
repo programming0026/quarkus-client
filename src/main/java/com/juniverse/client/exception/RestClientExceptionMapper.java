@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 /**
  * Exception mapper para manejar errores HTTP del REST client
  * 
- * @author ajuar
+ * @author Java Universe
  */
 @Provider
 public class RestClientExceptionMapper implements ResponseExceptionMapper<RuntimeException> {

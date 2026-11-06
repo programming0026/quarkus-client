@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * DTO para representar coordenadas geográficas
  * 
- * @author ajuar
+ * @author Java Universe
  */
 public class Geo implements java.io.Serializable {
 

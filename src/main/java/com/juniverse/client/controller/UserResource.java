@@ -2,7 +2,7 @@ package com.juniverse.client.controller;
 
 /**
  *
- * @author ajuar
+ * @author Java Universe
  */
 import com.juniverse.client.dto.User;
 import com.juniverse.client.service.UserService;

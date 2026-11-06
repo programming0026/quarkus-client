@@ -11,7 +11,7 @@ import jakarta.ws.rs.ext.Provider;
  * Configuración personalizada de Jackson para el REST Client
  * Esta clase configura el ObjectMapper para el cliente REST
  * 
- * @author ajuar
+ * @author Java Universe
  */
 @Provider
 public class JacksonRestClientConfiguration implements ContextResolver<ObjectMapper> {

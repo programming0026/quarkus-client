@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
  *
- * @author ajuar
+ * @author Java Universe
  */
 public class Address implements java.io.Serializable{
 

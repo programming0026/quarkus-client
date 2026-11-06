@@ -10,7 +10,7 @@ import java.util.concurrent.CompletionStage;
 
 /**
  *
- * @author ajuar
+ * @author Java Universe
  */
 @RegisterRestClient(configKey = "user-api")
 @Path("/users")

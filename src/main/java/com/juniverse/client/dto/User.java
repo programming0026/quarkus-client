@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  *
- * @author ajuar
+ * @author Java Universe
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)

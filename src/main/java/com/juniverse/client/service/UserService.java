@@ -14,7 +14,7 @@ import java.util.concurrent.CompletionStage;
 @ApplicationScoped
 /**
  *
- * @author ajuar
+ * @author Java Universe
  */
 public class UserService {
 
